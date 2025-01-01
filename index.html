@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Smart Devices Store</title>
+  </head>
+  <body>
+    <header>
+      <p><a href="index.html">Smart Devices Store</a></p>
+      <nav>
+        <span class="icon" id="menu-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+        <ul id="nav-menu">
+          <li class="active"><a href="index.html">Home</a></li>
+          <li class="dropdown-toggle">
+            <a href="#">Products</a>
+            <ul class="dropdown-menu">
+              <li><a href="./products/phones.html">Phones</a></li>
+              <li><a href="./products/tablets.html">Tablets</a></li>
+              <li><a href="./products/watches.html">Watches</a></li>
+              <li><a href="./products/airpods.html">Airpods</a></li>
+            </ul>
+          </li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li>
+            <a href="cart.html" id="cart">
+              <i class="fa fa-shopping-cart"> Cart</i>
+              <span id="cart-count">0</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <h1>Welcome to Smart Devices Store</h1>
+        <p>Your one-stop shop for the latest smart devices.</p>
+        <a href="./products/phones.html" class="btn">Shop Now</a>
+      </section>
+      <!-- Featured Products -->
+      <section class="featured-products">
+        <div class="product-category">
+          <h2>Featured Phones</h2>
+          <div class="product-grid">
+            <div class="product-item">
+              <img src="images/huaweinovaY70.jpg" alt="huaweinovaY70" />
+              <h3>Huawei Nova Y70</h3>
+              <p>$600</p>
+              <a href="products/phones.html" class="btn">Buy Now</a>
+            </div>
+            <div class="product-item">
+              <img src="images/ip13promax.jpg" alt="ip13promax" />
+              <h3>Iphone 13 pro max</h3>
+              <p>$999</p>
+              <a href="products/phones.html" class="btn">Buy Now</a>
+            </div>
+            <div class="product-item">
+              <img src="images/samS23Ultra.jpg" alt="samS23Ultra" />
+              <h3>Samsung S23 Ultra</h3>
+              <p>$999</p>
+              <a href="products/phones.html" class="btn">Buy Now</a>
+            </div>
+            <div class="product-item">
+              <img src="images/realme11proplus.jpg" alt="realme11proplus" />
+              <h3>Realme 11 pro plus</h3>
+              <p>$699</p>
+              <a href="products/phones.html" class="btn">Buy Now</a>
+            </div>
+            <div class="product-item">
+              <img src="images/opporeno8pro.jpg" alt="opporeno8pro" />
+              <h3>Oppo Reno 8 pro</h3>
+              <p>$1499</p>
+              <a href="products/phones.html" class="btn">Buy Now</a>
+            </div>
+            <div class="product-item">
+              <img src="images/Xiaomi13Pro.jpg" alt="Xiaomi13Pro" />
+              <h3>Xiaomi 13 Pro</h3>
+              <p>$1499</p>
+              <a href="products/phones.html" class="btn">Buy Now</a>
+            </div>
+          </div>
+          <a href="products/phones.html" class="btn">discover more phones</a>
+        </div>
+        <div class="product-category">
+          <h2>Featured Tablets</h2>
+          <div class="product-grid">
+            <div class="product-item">
+              <img src="images/ipad12pro6.jpg" alt="ipad12pro6" />
+              <h3>Ipad 12 pro 6</h3>
+              <p>$1600</p>
+              <a href="products/tablets.html" class="btn">Buy Now</a>
+            </div>
+            <div class="product-item">
+              <img src="images/samTabS8Ultra.jpg" alt="samTabS8Ultra" />
+              <h3>Samsung Tab S8 Ultra</h3>
+              <p>$1999</p>
+              <a href="products/tablets.html" class="btn">Buy Now</a>
+            </div>
+          </div>
+          <a href="products/tablets.html" class="btn">discover more tablets</a>
+        </div>
+      </section>
+      <!-- Promotional Banner -->
+      <section class="promo-banner">
+        <h2>Special Offer!</h2>
+        <p>Get 20% off on all smartwatches. Limited time offer.</p>
+        <a href="products/watches.html" class="btn">Shop Watches</a>
+      </section>
+      <!-- Customer Testimonials -->
+      <section class="testimonials">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial">
+          <p>"Great selection and amazing customer service!"</p>
+          <p>- John Doe</p>
+        </div>
+        <div class="testimonial">
+          <p>"I found exactly what I was looking for. Highly recommend!"</p>
+          <p>- Jane Smith</p>
+        </div>
+      </section>
+      <!-- Newsletter Signup -->
+      <section class="newsletter-signup">
+        <h2>Stay Updated</h2>
+        <p>Sign up for our newsletter to get the latest news and offers.</p>
+        <form>
+          <input type="email" placeholder="Enter your email" required />
+          <button type="submit" class="btn">Subscribe</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 Smart Devices Store</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Cart - Smart Devices Store</title>
+  </head>
+  <body>
+    <header>
+      <p><a href="index.html">Smart Devices Store</a></p>
+      <nav>
+        <span class="icon" id="menu-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+        <ul id="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li class="dropdown-toggle">
+            <a href="#">Products</a>
+            <ul class="dropdown-menu">
+              <li><a href="./products/phones.html">Phones</a></li>
+              <li><a href="./products/tablets.html">Tablets</a></li>
+              <li><a href="./products/watches.html">Watches</a></li>
+              <li><a href="./products/airpods.html">Airpods</a></li>
+            </ul>
+          </li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li class="active">
+            <a href="cart.html" id="cart">
+              <i class="fa fa-shopping-cart"> Cart</i>
+              <span id="cart-count">0</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="cart">
+        <h1>Shopping Cart</h1>
+        <table class="cart-table">
+          <thead>
+            <tr>
+              <th>Product</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Total</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Cart items will be dynamically inserted here -->
+          </tbody>
+        </table>
+        <div class="cart-total">
+          <p><strong>Total:</strong> $<span id="cart-total">0.00</span></p>
+          <button class="btn-checkout">Proceed to Checkout</button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Smart Devices Store</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

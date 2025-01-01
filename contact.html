@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Smart Devices Store</title>
+  </head>
+  <body>
+    <header>
+      <p><a href="index.html">Smart Devices Store</a></p>
+      <nav>
+        <span class="icon" id="menu-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+        <ul id="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li class="dropdown-toggle">
+            <a href="#">Products</a>
+            <ul class="dropdown-menu">
+              <li><a href="./products/phones.html">Phones</a></li>
+              <li><a href="./products/tablets.html">Tablets</a></li>
+              <li><a href="./products/watches.html">Watches</a></li>
+              <li><a href="./products/airpods.html">Airpods</a></li>
+            </ul>
+          </li>
+          <li><a href="about.html">About</a></li>
+          <li class="active"><a href="contact.html">Contact</a></li>
+          <li>
+            <a href="cart.html" id="cart">
+              <i class="fa fa-shopping-cart"> Cart</i>
+              <span id="cart-count">0</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="contact-us">
+        <h1>Contact Us</h1>
+        <p>
+          If you have any questions, comments, or concerns, feel free to reach
+          out to us. We're here to help!
+        </p>
+        <h2>Get in Touch</h2>
+        <p>You can contact us through any of the following methods:</p>
+        <ul>
+          <li><strong>Email:</strong> support@smartdevicesstore.com</li>
+          <li><strong>Phone:</strong> +1 234 567 890</li>
+          <li>
+            <strong>Address:</strong> 123 Smart Street, Tech City, CA 94043
+          </li>
+        </ul>
+        <h2>Send Us a Message</h2>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 Smart Devices Store</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
