@@ -14,15 +14,22 @@ a {
   text-decoration: none;
 }
 /* header */
-header {
+header,
+footer {
   background-color: #4329c5;
   color: white;
   padding: 10px;
   text-align: center;
-  display: flex;
+  height: 67px;
+  width: 100%;
+}
+header {
   justify-content: space-between;
   align-items: center;
-  height: 67px;
+  display: flex;
+  position: sticky;
+  top: 0px;
+  z-index: 10;
 }
 header p a {
   font-size: 22px;
@@ -159,16 +166,40 @@ main {
   margin: 20px auto 50px;
 }
 /* home page start */
-main .hero {
+.landing {
+  background-image: url("./images/landing.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
   text-align: center;
   line-height: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  position: relative;
 }
-main .hero h1 {
+.landing::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.landing h1 {
   font-size: 40px;
   text-transform: uppercase;
+  margin: 100px 0;
+  z-index: 1;
 }
-main .hero p {
+.landing p {
   font-size: 20px;
+  color: #fff;
+  z-index: 1;
+  margin-bottom: 150px;
 }
 .btn {
   margin: 10px;
@@ -181,6 +212,7 @@ main .hero p {
   cursor: pointer;
   color: white;
   border: none;
+  z-index: 1;
 }
 .btn:hover {
   background-color: #2e1f8a;
@@ -485,14 +517,10 @@ main .hero p {
 /* Quick View Modal Styles End */
 /* Footer */
 footer {
-  background-color: #4329c5;
-  color: white;
-  text-align: center;
-  padding: 15px;
   position: fixed;
-  left: 0;
   bottom: 0;
-  width: 100%;
+  left: 0;
+  z-index: 10;
 }
 footer p {
   font-size: 20px;
