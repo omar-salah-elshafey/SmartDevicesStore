@@ -858,7 +858,7 @@ if (checkoutButton) {
       );
     } else {
       // Route to the checkout.html page
-      window.location.href = "checkout.html";
+      window.location.href = "../checkout.html";
     }
   });
 }

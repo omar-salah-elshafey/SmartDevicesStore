@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />  
     <title>Checkout - Smart Devices Store</title>
   </head>
   <body>
@@ -44,42 +48,50 @@
         <form id="checkout-form">
           <h2>Shipping Information</h2>
           <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required>
+          <input type="text" id="name" name="name" required />
 
           <label for="address">Address:</label>
-          <input type="text" id="address" name="address" required>
+          <input type="text" id="address" name="address" required />
 
           <label for="city">City:</label>
-          <input type="text" id="city" name="city" required>
+          <input type="text" id="city" name="city" required />
 
           <label for="state">State:</label>
-          <input type="text" id="state" name="state" required>
+          <input type="text" id="state" name="state" required />
 
           <label for="zip">Zip Code:</label>
-          <input type="text" id="zip" name="zip" required>
+          <input type="text" id="zip" name="zip" required />
 
           <label for="country">Country:</label>
-          <input type="text" id="country" name="country" required>
+          <input type="text" id="country" name="country" required />
 
           <h2>Payment Information</h2>
           <label for="card-name">Name on Card:</label>
-          <input type="text" id="card-name" name="card-name" required>
+          <input type="text" id="card-name" name="card-name" required />
 
           <label for="card-number">Card Number:</label>
-          <input type="text" id="card-number" name="card-number" required>
+          <input type="text" id="card-number" name="card-number" required />
 
           <label for="expiry">Expiry Date:</label>
-          <input type="text" id="expiry" name="expiry" placeholder="MM/YY" required>
+          <input
+            type="text"
+            id="expiry"
+            name="expiry"
+            placeholder="MM/YY"
+            required
+          />
 
           <label for="cvv">CVV:</label>
-          <input type="text" id="cvv" name="cvv" required>
+          <input type="text" id="cvv" name="cvv" required />
 
           <h2>Order Summary</h2>
           <div id="order-summary">
             <!-- Order summary will be dynamically generated here -->
           </div>
 
-          <button type="button" class="btn-checkout" onclick="submitOrder()">Place Order</button>
+          <button type="button" class="btn-checkout" onclick="submitOrder()">
+            Place Order
+          </button>
         </form>
       </section>
     </main>
