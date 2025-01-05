@@ -225,6 +225,23 @@ main {
   letter-spacing: 1px;
   transform: scale(1.1);
 }
+@media (max-width: 792px) {
+  .landing h1 {
+    font-size: 20px;
+    margin: 0;
+  }
+  .landing p {
+    font-size: 20px;
+    color: #fff;
+    z-index: 1;
+    margin-bottom: 0px;
+  }
+  .btn {
+    padding: 10px 20px;
+    width: 100%;
+    font-size: 15px;
+  }
+}
 /* Featured Products */
 .featured-products {
   padding: 20px;
@@ -449,7 +466,8 @@ main {
 /* cart page end */
 /* checkout page start */
 /* Checkout Page Styles */
-.checkout h1, .checkout h2 {
+.checkout h1,
+.checkout h2 {
   text-align: center;
 }
 
